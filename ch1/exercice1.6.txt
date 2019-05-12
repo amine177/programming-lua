@@ -1,0 +1,1 @@
+By using : value == true or value == false
