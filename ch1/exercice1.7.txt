@@ -1,0 +1,7 @@
+(x and y and (not z)) or ((not y) and x)
+
+We don't need the parentheses here, because of the logical
+precedence of not over and , and over or
+
+I recommend using them because they improve readability.
+Good programming is mostly about making humans understand the code
