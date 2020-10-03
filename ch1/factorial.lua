@@ -1,15 +1,10 @@
--- recursive factorial function
--- when reaching the maximum stack frame depth
--- lua returns (0)
-function fact (n)
-  if n == 0 then
-    return 1
-  else
-    return n * fact(n - 1)
-  end
-end
+-- this factorial function is recursive
+-- if the lua vm reaches the maximum stack depth it returns 0
 
-
-print("enter a number:") -- prints "enter a number"
-a = io.read("*n")        -- reads a number
-print(fact(a))           -- prints the result
+function factorial (n)
+   if n == 0 then
+      return 1
+   else
+      return n * factorial(n - 1)
+   end                              -- an block within a conditional statement must end with end
+end                                 -- a function in lua must end with end
